@@ -322,6 +322,10 @@ nav .inner .menu-left {
 /* ---top--- */
 
 /* ---menu--- */
+
+.menu {
+  margin-top: -120px:
+}
 .menu-container {
   position: relative;
   width: 90%;
@@ -356,6 +360,7 @@ nav .inner .menu-left {
   text-align: center;
   padding: 10px 0;
   font-weight: bold;
+  height: 52px;
 }
 .menu-container li:nth-child(1) {
   height: 250px;
@@ -387,17 +392,17 @@ nav .inner .menu-left {
   align-items: center;
   border-bottom: 2px solid #000;
   background: #fbf7f1;
-  padding: 20px 100px;
+  padding: 56px 100px;
   box-sizing: border-box;
   height: 72px;
 }
 
 .menu-box h3 {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  height: 100px;
+  transform: translateX(-50%); */
+  /* height: 100px; */
   font-size: 52px;
   font-weight: normal;
   font-family: "TAN-HEADLINE", sans-serif;
