@@ -384,6 +384,16 @@ nav .inner .menu-left {
   box-sizing: border-box;
   height: 180px;
 }
+.menu-box-top h3 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 100px;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: "TAN-HEADLINE", sans-serif;
+}
 .menu-box {
   display: flex;
   justify-content: center;
@@ -403,7 +413,9 @@ nav .inner .menu-left {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); */
   /* height: 100px; */
-  font-size: 52px;
+  transform: translateX(-50%);
+  height: 100px;
+  font-size: 32px;
   font-weight: normal;
   font-family: "TAN-HEADLINE", sans-serif;
 }
