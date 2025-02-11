@@ -916,6 +916,17 @@ nav .inner .menu-left {
   background-size: contain;
 }
 
+.location-bg {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 50%;
+}
+
+.location-bg img {
+  width: 100%;
+}
+
 .location-container {
   width: 90%;
   margin: 100px auto;
