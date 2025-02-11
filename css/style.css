@@ -23,12 +23,25 @@ main {
 
 /* ---header--- */
 header {
-  background: url(../img/vatten.jpg);
+  /* background: url(../img/copy_983B110B-613B-444D-A050-809AB42A4B8B.mov); */
   background-size: cover;
   background-position: center;
   height: 100vh;
   position: relative;
   z-index: 9999;
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(0, 0);
 }
 
 header .bottom-bg {
