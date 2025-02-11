@@ -27,6 +27,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  overflow: hidden;
   position: relative;
   z-index: 9999;
 }
@@ -42,6 +43,23 @@ header video {
   min-width: 100%;
   min-height: 100%;
   transform: translate(0, 0);
+}
+
+header .reserve-btn {
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  right: 15px;
+  padding: 8px 14px;
+  background-color: rgba(211, 75, 25, 1);
+  border-radius: 21px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Futura;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.94px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 header .bottom-bg {
@@ -252,7 +270,7 @@ nav .inner .menu-left {
   }
   header .bottom-bg {
     bottom: -30px;
-    width: 100%;
+    width: 127%;
   }
   .icon {
     width: 150px;
@@ -297,23 +315,38 @@ nav .inner .menu-left {
   font-size: 16px;
 } */
 .top-container h2 {
-  font-size: 42px;
+  /* font-size: 42px;
   line-height: 2;
-  font-weight: medium;
+  font-weight: medium; */
+  font-size: 32px;
+  line-height: 41.02px;
+  font-weight: 450;
+  letter-spacing: 0%;
   text-align: center;
   margin-bottom: 50px;
-  font-family: "TAN-HEADLINE";
+  /* font-family: "TAN-HEADLINE"; */
+  font-family: Futura PT Cond;
 }
 .top-container p {
   font-size: 24px;
-  line-height: 2;
+  /* line-height: 2; */
   width: 80%;
   margin: 0 auto;
+  font-family: Futura PT Cond;
+  font-weight: 400;
+  line-height: 20.51px;
+  letter-spacing: 4%;
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {
+  .top-inner {
+    padding: 50px 0 133px;
+    text-align: center;
+  }
   .top-container h2 {
     font-size: 22px;
+    margin-bottom: 25px;
   }
   .top-container p {
     font-size: 16px;
@@ -324,7 +357,7 @@ nav .inner .menu-left {
 /* ---menu--- */
 
 .menu {
-  margin-top: -120px:
+  margin-top: -120px;
 }
 .menu-container {
   position: relative;
@@ -441,7 +474,7 @@ nav .inner .menu-left {
 
 @media screen and (max-width: 768px) {
   .logo-bottom {
-    margin-bottom: 30px;
+    margin-bottom: 9px;
   }
 }
 
@@ -488,14 +521,16 @@ nav .inner .menu-left {
 .ramen-box h4 {
   font-size: 44px;
   margin: 80px 0 30px;
+  line-height: 1;
   font-weight: bold;
 }
 .ramen-box h4 span {
   font-size: 24px;
+  font-family: "TAN-HEADLINE", sans-serif;
 }
 .ramen-box h5 {
   font-size: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .ramen-box p {
   font-size: 22px;
@@ -520,13 +555,13 @@ nav .inner .menu-left {
     padding: 20px 50px;
   }
   .ramen-box .logo {
-    width: 100px;
-    height: 100px;
-    top: -20%;
+    width: 63px;
+    height: 63px;
+    top: -17%;
   }
   .ramen-box h4 {
-    font-size: 20px;
-    margin: 50px 0 30px;
+    font-size: 24px;
+    margin: 26px 0 10px;
   }
   .ramen-box h4 span {
     font-size: 14px;
@@ -536,6 +571,7 @@ nav .inner .menu-left {
   }
   .ramen-box p {
     font-size: 14px;
+    margin-bottom: 40px;
   }
 }
 
@@ -579,7 +615,7 @@ nav .inner .menu-left {
 }
 
 .container {
-  width: 90%;
+  width: 86%;
   margin: 0 auto;
 }
 .box {
@@ -666,15 +702,17 @@ nav .inner .menu-left {
   line-height: 1.6;
   background: url(../img/bg01.jpg);
   border: 5px solid #242625;
+  border-top: none;
 }
 
 @media screen and (max-width: 768px) {
   .box {
-    padding: 30px;
+    padding: 25px 30px 30px;
   }
   .box .ttl {
     font-size: 24px;
-    padding: 20px 50px;
+    padding: 0 48px;
+    top: -23px;
   }
   .box .logo {
     width: 100px;
@@ -682,8 +720,8 @@ nav .inner .menu-left {
     top: -20%;
   }
   .box h4 {
-    font-size: 20px;
-    margin: 50px 0 30px;
+    font-size: 24px;
+    margin: 0px 0 10px;
   }
   .box h4 span {
     font-size: 14px;
@@ -700,7 +738,7 @@ nav .inner .menu-left {
   }
   .item-box h5 {
     font-size: 18px;
-    padding: 10px;
+    padding: 10px 50px;
     width: max-content;
   }
   .item-box .price {
@@ -717,8 +755,9 @@ nav .inner .menu-left {
   }
 
   .item-text {
-    padding: 50px 10px;
+    padding: 20px 10px 68px;
     font-size: 14px;
+    padding-left: 30px;
   }
 }
 
@@ -978,7 +1017,7 @@ footer {
   position: relative;
   background: url(../img/bg01.jpg);
   background-size: contain;
-  padding-top: 33.8vw;
+  padding-top: min(32.3vw, 193.8px);
 }
 .footer-bg {
   width: 100%;
@@ -989,7 +1028,8 @@ footer {
 .footer-bg img {
   float: left;
   width: 94vw;
-  margin-left: -9vw;
+  max-width: 600px;
+  margin-left: max(-9vw, -54px);
   transform: scaleX(-1);
 }
 
@@ -1000,7 +1040,6 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
 }
 
 .footer-container .logo {
@@ -1026,16 +1065,18 @@ footer {
   font-size: 14px;
   color: #fff;
   margin: 20px 0;
+  font-weight: 400;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   .footer-container .logo {
-    width: 50px;
-    margin: 19px auto 15px;
+    width: 52px;
+    margin: 18px auto 14px;
   }
 
   .footer-container .logo-name {
-    width: 150px;
+    width: 152px;
     margin: 2px auto;
   }
 
