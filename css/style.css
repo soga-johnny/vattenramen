@@ -315,7 +315,7 @@ nav .inner .menu-left {
   font-size: 16px;
 } */
 .top-container h2 {
-  font-size: 42px;
+  font-size: 56px;
   line-height: 2;
   font-weight: medium;
   text-align: center;
@@ -323,7 +323,7 @@ nav .inner .menu-left {
   font-family: "TAN-HEADLINE";
 }
 .top-container p {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 2;
   width: 80%;
   margin: 0 auto;
@@ -331,10 +331,10 @@ nav .inner .menu-left {
 
 @media screen and (max-width: 768px) {
   .top-container h2 {
-    font-size: 22px;
+    font-size: 32px;
   }
   .top-container p {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 /* ---top--- */
@@ -564,12 +564,12 @@ nav .inner .menu-left {
   width: fit-content;
   margin: 0 auto;
   text-align: left;
-  padding: 50px;
+  padding: 20px;
   font-size: 24px;
   font-weight: bold;
 }
 .topping-box p {
-  padding: 30px;
+  padding: 16px;
 }
 .topping-box .bg-red {
   background: rgba(211, 75, 25, 0.16);
@@ -583,19 +583,23 @@ nav .inner .menu-left {
 }
 .topping-box p.small {
   text-align: center;
-  font-size: 18px;
-  margin-bottom: 50px;
+  font-size: 24px;
+  margin-top: -50px;
+  margin-bottom: -70px;
 }
 
 @media screen and (max-width: 768px) {
   .topping-box {
     width: fit-content;
-    font-size: 13px;
+    font-size: 20px;
     padding: 10px;
   }
+  .topping-box p {
+    font-size: 20px;
+  }
   .topping-box p.small {
-    font-size: 11px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    /* margin-bottom: 30px; */
   }
 }
 
@@ -722,13 +726,13 @@ nav .inner .menu-left {
     margin: 0px 0 10px;
   }
   .box h4 span {
-    font-size: 14px;
+    font-size: 20px;
   }
   .box h5 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .box p {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .item-box {
@@ -755,17 +759,17 @@ nav .inner .menu-left {
     padding: 1px;
   }
   .item-box .number {
-    font-size: 18px;
+    font-size: 20px;
     padding: 15px;
   }
   .item-box .taste {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: -4px;
   }
 
   .item-text {
     padding: 25px 15px 21px;
-    font-size: 14px;
+    font-size: 18px;
     padding-left: 25px;
     min-height: 154px;
   }
