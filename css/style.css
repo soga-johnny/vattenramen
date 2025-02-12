@@ -985,18 +985,27 @@ nav .inner .menu-left {
 .location {
   background: url(../img/bg01.jpg);
   background-size: contain;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
 }
 
 .location-container {
-  width: 90%;
+  width: 100%;
+  max-width: 640px;
   margin: 100px auto 0;
+  padding-bottom: 17px;
   text-align: center;
 }
 
 .location-container h3 {
-  font-size: 52px;
-  font-weight: bold;
-  margin-bottom: 30px;
+  /* font-size: 52px;
+  font-weight: bold;*/
+  margin-bottom: 22px;
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 41.02px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .location-container .map iframe {
@@ -1005,7 +1014,8 @@ nav .inner .menu-left {
 
 @media screen and (max-width: 768px) {
   .location-container .map iframe {
-    height: 125px;
+    height: 28.5vw;
+    margin-bottom: 18px;
   }
 }
 /* ---location--- */
@@ -1029,7 +1039,7 @@ footer {
   float: left;
   width: 94vw;
   max-width: 600px;
-  margin-left: max(-9vw, -54px);
+  margin-left: max(-8vw, -54px);
   transform: scaleX(-1);
 }
 
