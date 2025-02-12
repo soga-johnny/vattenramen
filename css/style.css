@@ -534,7 +534,7 @@ nav .inner .menu-left {
 }
 .ramen-box p {
   font-size: 22px;
-  line-height: 1.8;
+  line-height: 1.25;
   margin-bottom: 100px;
 }
 
@@ -557,11 +557,11 @@ nav .inner .menu-left {
   .ramen-box .logo {
     width: 63px;
     height: 63px;
-    top: -17%;
+    top: -22%;
   }
   .ramen-box h4 {
     font-size: 24px;
-    margin: 26px 0 10px;
+    margin: 26px 0 12px;
   }
   .ramen-box h4 span {
     font-size: 14px;
@@ -571,7 +571,7 @@ nav .inner .menu-left {
   }
   .ramen-box p {
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 }
 
@@ -615,7 +615,9 @@ nav .inner .menu-left {
 }
 
 .container {
-  width: 86%;
+  max-width: 100%;
+  width: 640px;
+  padding: 0 80px;
   margin: 0 auto;
 }
 .box {
@@ -631,6 +633,11 @@ nav .inner .menu-left {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  min-height: 40px;
   background: #d34b19;
   font-size: 34px;
   padding: 20px 100px;
@@ -655,7 +662,7 @@ nav .inner .menu-left {
 }
 .item-box h5 {
   position: absolute;
-  top: -34px;
+  top: -30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -663,11 +670,12 @@ nav .inner .menu-left {
   background: #d34b19;
   font-size: 34px;
   padding: 10px 100px;
-  font-weight: bold;
+  font-weight: 450;
+  color: rgba(36, 38, 37, 1);
 }
 .item-box .price {
   position: absolute;
-  bottom: -30px;
+  bottom: -20px;
   left: -5px;
   font-size: 30px;
   border: 5px solid #242625;
@@ -678,41 +686,46 @@ nav .inner .menu-left {
 }
 .item-box .number {
   position: absolute;
-  right: 10px;
+  right: 12px;
   bottom: 10px;
   font-size: 24px;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #fff;
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 41px;
+  height: 41px;
+  font-family: Quicksand;
 }
 .item-box .taste {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 8px;
+  top: 12px;
   font-size: 40px;
 }
 
 .item-text {
   padding: 50px;
   font-size: 24px;
-  line-height: 1.6;
+  line-height: 1.22;
   background: url(../img/bg01.jpg);
   border: 5px solid #242625;
   border-top: none;
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 0 min(30px, 7vw);
+  }
   .box {
     padding: 25px 30px 30px;
   }
   .box .ttl {
     font-size: 24px;
-    padding: 0 48px;
-    top: -23px;
+    padding: 0 5px;
+    top: -25px;
   }
   .box .logo {
     width: 100px;
@@ -737,13 +750,24 @@ nav .inner .menu-left {
     height: 200px;
   }
   .item-box h5 {
-    font-size: 18px;
-    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 208px;
+    min-height: 40px;
+    font-size: 24px;
+    padding: 0px 5px;
     width: max-content;
   }
   .item-box .price {
-    font-size: 18px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 71px;
+    min-height: 40px;
+    font-size: 20px;
+    padding: 1px;
   }
   .item-box .number {
     font-size: 18px;
@@ -751,13 +775,18 @@ nav .inner .menu-left {
   }
   .item-box .taste {
     font-size: 18px;
-    top: 30px;
+    letter-spacing: -4px;
   }
 
   .item-text {
-    padding: 20px 10px 68px;
+    padding: 25px 15px 21px;
     font-size: 14px;
-    padding-left: 30px;
+    padding-left: 25px;
+    min-height: 154px;
+  }
+  .ramen .item.logo-bottom .item-text {
+    min-height: 123px;
+    padding-left: 35px;
   }
 }
 
