@@ -100,13 +100,13 @@ header .bottom-bg img {
 }
 
 .icon .logo {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 30px;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
 }
 
 .icon .logo-name {
-  width: 150px;
+  width: 120px;
   margin: 0 auto;
 }
 
@@ -278,12 +278,13 @@ nav .inner .menu-left {
   }
 
   .icon .logo {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
   }
 
   .icon .logo-name {
-    width: 100px;
+    width: 70px;
   }
 
   .menu-right {
@@ -316,7 +317,7 @@ nav .inner .menu-left {
   font-size: 16px;
 } */
 .top-container h2 {
-  font-size: 56px;
+  font-size: 48px;
   line-height: 1.5;
   font-weight: 450;
   /* line-height: 41.02px; */
@@ -328,7 +329,7 @@ nav .inner .menu-left {
 .top-container p {
   font-size: 32px;
   line-height: 2;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   font-weight: 400;
   letter-spacing: 4%;
@@ -337,7 +338,7 @@ nav .inner .menu-left {
 
 @media screen and (max-width: 768px) {
   .top-container h2 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 25px;
   }
   .top-container p {
@@ -570,7 +571,7 @@ nav .inner .menu-left {
   .ramen-box .logo {
     width: 63px;
     height: 63px;
-    top: -22%;
+    top: -19%;
   }
   .ramen-box h4 {
     font-size: 24px;
@@ -885,9 +886,8 @@ nav .inner .menu-left {
   }
 
   .item-text {
-    padding: 25px 15px 21px;
+    padding: 25px 15px;
     font-size: 18px;
-    padding-left: 25px;
     min-height: 154px;
   }
   .ramen .item.logo-bottom .item-text {
