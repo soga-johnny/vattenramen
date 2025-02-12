@@ -902,10 +902,6 @@ nav .inner .menu-left {
   position: relative;
   border: 5px solid #242625;
 }
-
-.drink h4 {
-  font-family: "TAN-HEADLINE", sans-serif;
-}
 .drink h5 {
   position: absolute;
   top: -34px;
@@ -916,9 +912,6 @@ nav .inner .menu-left {
   background: #d34b19;
   font-size: 34px;
   padding: 10px 100px;
-  min-width: 208px;
-  min-height: 40px;
-  text-align: center;
   font-weight: bold;
 }
 .drink-item {
@@ -952,31 +945,32 @@ nav .inner .menu-left {
 }
 
 @media screen and (max-width: 768px) {
+  .drink-item {
+    padding: 20px 0;
+  }
   .drink h5 {
-    top: -24px;
     font-size: 24px;
-    font-weight: 450;
-    padding: 0px;
+    padding: 10px;
     width: max-content;
   }
   .drink-item .sab-ttl {
     width: 90%;
     margin: 30px auto;
-    font-size: 20px;
+    font-size: 24px;
   }
   .drink-item .sab-ttl span {
-    font-size: 14px;
+    font-size: 20px;
   }
   .drink-item-box {
     width: 90%;
-    font-size: 14px;
+    font-size: 20px;
   }
   .drink-item-box .name span {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 16px;
   }
 }
-/* ---drink--- */
+/* ---dink--- */
 
 /* ---ramen-bg--- */
 .ramen .item-box.ramen01 {
