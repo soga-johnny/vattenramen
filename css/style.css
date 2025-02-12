@@ -54,11 +54,11 @@ header .reserve-btn {
   background-color: rgba(211, 75, 25, 1);
   border-radius: 21px;
   color: rgba(255, 255, 255, 1);
-  font-family: Futura;
-  font-weight: 500;
+  font-family: "Jost", serif;
+  font-weight: 400;
   font-size: 12px;
-  line-height: 15.94px;
-  letter-spacing: 0%;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
   text-align: center;
 }
 
@@ -111,6 +111,7 @@ header .bottom-bg img {
 }
 
 .menu-right {
+  z-index: 1;
   position: fixed;
   top: 10px;
   right: 50px;
@@ -317,7 +318,9 @@ nav .inner .menu-left {
 .top-container h2 {
   font-size: 56px;
   line-height: 2;
-  font-weight: medium;
+  font-weight: 450;
+  line-height: 41.02px;
+  letter-spacing: 0;
   text-align: center;
   margin-bottom: 50px;
   font-family: "TAN-HEADLINE";
@@ -327,14 +330,19 @@ nav .inner .menu-left {
   line-height: 2;
   width: 80%;
   margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: 4%;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   .top-container h2 {
     font-size: 32px;
+    margin-bottom: 25px;
   }
   .top-container p {
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 20.51px;
   }
 }
 /* ---top--- */
@@ -362,7 +370,9 @@ nav .inner .menu-left {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background: #d34b19;
-  font-size: 34px;
+  color: rgba(36, 38, 37, 1);
+  font-size: 24px;
+  line-height: 30.77px;
   padding: 20px 100px;
   border: 5px solid #000;
   font-weight: bold;
@@ -378,6 +388,7 @@ nav .inner .menu-left {
   text-align: center;
   padding: 10px 0;
   font-weight: bold;
+  color: rgba(36, 38, 37, 1);
   height: 52px;
 }
 .menu-container li:nth-child(1) {
@@ -408,6 +419,7 @@ nav .inner .menu-left {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   height: 100px;
+  color: rgba(36, 38, 37, 1);
   font-size: 32px;
   font-weight: normal;
   font-family: "TAN-HEADLINE", sans-serif;
@@ -433,6 +445,7 @@ nav .inner .menu-left {
   /* height: 100px; */
   transform: translateX(-50%);
   height: 100px;
+  color: rgba(36, 38, 37, 1);
   font-size: 32px;
   font-weight: normal;
   font-family: "TAN-HEADLINE", sans-serif;
@@ -440,8 +453,11 @@ nav .inner .menu-left {
 
 @media screen and (max-width: 768px) {
   .menu-container .ttl {
+    top: -24px;
+    min-height: 40px;
+    min-width: 110px;
     font-size: 24px;
-    padding: 20px 50px;
+    padding: 2px 5px;
   }
   .menu-container li {
     font-size: 32px;
@@ -523,6 +539,16 @@ nav .inner .menu-left {
   margin-bottom: 100px;
 }
 
+.ramen-box.options h4 {
+  font-size: 32px;
+  font-weight: 450;
+  font-family: futura-pt-condensed, sans-serif;
+}
+.ramen-box.options span {
+  font-size: 20px;
+  font-weight: 450;
+  font-family: futura-pt-condensed, sans-serif;
+}
 .ramen-box.options p {
   width: fit-content;
   margin: 0 auto 30px;
@@ -558,6 +584,19 @@ nav .inner .menu-left {
     font-size: 14px;
     margin-bottom: 48px;
   }
+}
+.ramen-box.topping h4 {
+  font-size: 32px;
+  font-weight: 450;
+  font-family: futura-pt-condensed, sans-serif;
+}
+.ramen-box.topping span {
+  font-size: 20px;
+  font-weight: 450;
+  font-family: futura-pt-condensed, sans-serif;
+}
+.ramen-box.topping span.jp {
+  font-family: "Shippori Mincho", serif;
 }
 
 .topping-box {
@@ -601,6 +640,82 @@ nav .inner .menu-left {
     font-size: 20px;
     /* margin-bottom: 30px; */
   }
+}
+
+/* APPETIZERS */
+.appetizer .box h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(36, 38, 37, 1);
+}
+
+.appetizer .box h4 .jp {
+  font-size: 18px;
+}
+
+/* STARTERS */
+.starters .box h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(36, 38, 37, 1);
+}
+
+.starters .box h4 .jp {
+  font-size: 18px;
+}
+/* GYOZA */
+.gyoza h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+}
+
+/* ricebowl */
+.ricebowl h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+}
+
+/* dessert */
+.dessert h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+}
+
+/* APPETIZERS */
+.appetizer .box h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(36, 38, 37, 1);
+}
+
+.appetizer .box h4 .jp {
+  font-size: 18px;
+}
+
+/* STARTERS */
+.starters .box h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(36, 38, 37, 1);
+}
+
+.starters .box h4 .jp {
+  font-size: 18px;
+}
+/* GYOZA */
+.gyoza h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+}
+
+/* ricebowl */
+.ricebowl h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+}
+
+/* dessert */
+.dessert h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
 }
 
 .container {
@@ -787,6 +902,10 @@ nav .inner .menu-left {
   position: relative;
   border: 5px solid #242625;
 }
+
+.drink h4 {
+  font-family: "TAN-HEADLINE", sans-serif;
+}
 .drink h5 {
   position: absolute;
   top: -34px;
@@ -797,6 +916,9 @@ nav .inner .menu-left {
   background: #d34b19;
   font-size: 34px;
   padding: 10px 100px;
+  min-width: 208px;
+  min-height: 40px;
+  text-align: center;
   font-weight: bold;
 }
 .drink-item {
@@ -831,8 +953,10 @@ nav .inner .menu-left {
 
 @media screen and (max-width: 768px) {
   .drink h5 {
-    font-size: 20px;
-    padding: 10px;
+    top: -24px;
+    font-size: 24px;
+    font-weight: 450;
+    padding: 0px;
     width: max-content;
   }
   .drink-item .sab-ttl {
@@ -852,7 +976,7 @@ nav .inner .menu-left {
     font-size: 12px;
   }
 }
-/* ---dink--- */
+/* ---drink--- */
 
 /* ---ramen-bg--- */
 .ramen .item-box.ramen01 {
@@ -1022,7 +1146,7 @@ nav .inner .menu-left {
   font-weight: 450;
   font-size: 32px;
   line-height: 41.02px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
 }
 
