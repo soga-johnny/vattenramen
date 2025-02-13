@@ -76,7 +76,7 @@ header .bottom-bg img {
 .header-container {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 
 .top-bg {
@@ -96,12 +96,12 @@ header .bottom-bg img {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 21px 0 22px;
 }
 
 .icon .logo {
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
   margin: 0 auto 20px;
 }
 
@@ -113,7 +113,7 @@ header .bottom-bg img {
 .menu-right {
   z-index: 1;
   position: fixed;
-  top: 10px;
+  top: 23px;
   right: 50px;
   display: flex;
   gap: 20px;
@@ -191,7 +191,7 @@ nav .inner .menu-left {
 .toggle_btn {
   display: block;
   position: fixed;
-  width: 30px;
+  width: 19px;
   height: 30px;
   transition: all 0.5s;
   cursor: pointer;
@@ -200,24 +200,24 @@ nav .inner .menu-left {
 .toggle_btn span {
   display: block;
   position: absolute;
-  left: 0;
-  width: 30px;
+  right: 0;
+  width: 19px;
   height: 3px;
   background-color: #333;
   border-radius: 4px;
   transition: all 0.5s;
 }
 .toggle_btn span:nth-child(1) {
-  top: 4px;
+  top: 6px;
   right: 0;
-  width: 50%;
+  width: 65%;
   margin-left: auto;
 }
 .toggle_btn span:nth-child(2) {
   top: 14px;
 }
 .toggle_btn span:nth-child(3) {
-  bottom: 4px;
+  bottom: 5px;
 }
 .open .toggle_btn span {
   background-color: #333;
@@ -264,7 +264,7 @@ nav .inner .menu-left {
 
 @media screen and (max-width: 768px) {
   .top-bg {
-    width: 75%;
+    width: 77.9%;
   }
   .top-bg img {
     width: 100%;
@@ -278,17 +278,16 @@ nav .inner .menu-left {
   }
 
   .icon .logo {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
 
   .icon .logo-name {
-    width: 70px;
+    width: 93px;
   }
 
   .menu-right {
-    gap: 10px;
+    right: 42px;
+    gap: 13px;
   }
 }
 

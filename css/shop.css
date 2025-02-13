@@ -12,7 +12,7 @@ body {
 .header-container {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 
 .top-bg {
@@ -32,23 +32,24 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 21px 0 22px;
 }
 
 .icon .logo {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 30px;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 20px;
 }
 
 .icon .logo-name {
-  width: 200px;
+  width: 120px;
   margin: 0 auto;
 }
 
 .menu-right {
+  z-index: 1;
   position: fixed;
-  top: 10px;
+  top: 23px;
   right: 50px;
   display: flex;
   gap: 20px;
@@ -126,7 +127,7 @@ nav .inner .menu-left {
 .toggle_btn {
   display: block;
   position: fixed;
-  width: 30px;
+  width: 19px;
   height: 30px;
   transition: all 0.5s;
   cursor: pointer;
@@ -135,24 +136,24 @@ nav .inner .menu-left {
 .toggle_btn span {
   display: block;
   position: absolute;
-  left: 0;
-  width: 30px;
+  right: 0;
+  width: 19px;
   height: 3px;
   background-color: #333;
   border-radius: 4px;
   transition: all 0.5s;
 }
 .toggle_btn span:nth-child(1) {
-  top: 4px;
+  top: 6px;
   right: 0;
-  width: 50%;
+  width: 65%;
   margin-left: auto;
 }
 .toggle_btn span:nth-child(2) {
   top: 14px;
 }
 .toggle_btn span:nth-child(3) {
-  bottom: 4px;
+  bottom: 5px;
 }
 .open .toggle_btn span {
   background-color: #333;
@@ -198,8 +199,31 @@ nav .inner .menu-left {
 }
 
 @media screen and (max-width: 768px) {
+  .top-bg {
+    width: 77.9%;
+  }
+  .top-bg img {
+    width: 100%;
+  }
+  header .bottom-bg {
+    bottom: -30px;
+    width: 90%;
+  }
+  .icon {
+    width: 150px;
+  }
+
+  .icon .logo {
+    margin-bottom: 17px;
+  }
+
+  .icon .logo-name {
+    width: 93px;
+  }
+
   .menu-right {
-    gap: 10px;
+    right: 42px;
+    gap: 13px;
   }
 }
 /* ---header--- */
@@ -288,39 +312,84 @@ nav .inner .menu-left {
 /* ---main--- */
 
 /* ---footer--- */
+footer {
+  position: relative;
+  background: url(../img/bg01.jpg);
+  background-size: contain;
+  padding-top: min(32.3vw, 193.8px);
+}
+.footer-bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 .footer-bg img {
-  float: right;
+  float: left;
+  width: 94vw;
+  max-width: 600px;
+  margin-left: max(-8vw, -54px);
+  transform: scaleX(-1);
 }
 
 .footer-container {
+  position: relative;
   background: #242625;
   text-align: center;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
 }
 
 .footer-container .logo {
   width: 100px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .footer-container .logo-name {
-  width: 250px;
-  margin: 30px auto;
+  width: 190px;
+  margin: 20px auto;
 }
 
 .footer-container .footer-sns {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin: 30px auto;
+  margin: 20px auto;
+}
+.footer-container .footer-sns a img {
+  width: 48px;
+}
+.footer-container p {
+  font-size: 14px;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  text-align: center;
 }
 
-.footer-container p {
-  font-size: 10px;
-  color: #fff;
-  margin: 30px 0;
+@media screen and (max-width: 768px) {
+  .footer-container .logo {
+    width: 52px;
+    margin: 18px auto 14px;
+  }
+
+  .footer-container .logo-name {
+    width: 152px;
+    margin: 2px auto;
+  }
+
+  .footer-container .footer-sns {
+    gap: 27px;
+    margin: 23px auto 0;
+  }
+  .footer-container .footer-sns a img {
+    width: 25px;
+  }
+
+  .footer-container p {
+    margin: 18px 0 15px;
+    font-size: 10px;
+  }
 }
 /* ---footer--- */
