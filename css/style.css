@@ -82,7 +82,7 @@ header .bottom-bg img {
 .top-bg {
   position: absolute;
   left: 0;
-  width: 80%;
+  width: 70%;
 }
 
 .icon {
@@ -267,7 +267,7 @@ nav .inner .menu-left {
     width: 77.9%;
   }
   .top-bg img {
-    width: 100%;
+    width: 80%;
   }
   header .bottom-bg {
     bottom: -30px;
@@ -1159,7 +1159,7 @@ nav .inner .menu-left {
  .location-wave {
   position: relative;
   height: 450px;
-  margin-bottom: -120px; 
+  margin-bottom: -70px; 
   /* z-index: ;  */
 } 
 .location-bg img {
@@ -1172,6 +1172,7 @@ nav .inner .menu-left {
 .location {
   background: url(../img/bg01.jpg);
   background-size: contain;
+  padding-top: 20px;
   padding-left: 6.5%;
   padding-right: 6.5%;
 }
@@ -1200,15 +1201,22 @@ nav .inner .menu-left {
 }
 
 @media screen and (max-width: 768px) {
+  .location {
+    padding-top: 10px;
+  }
+  .location-container {
+    margin: 40px auto 0;
+  }
   .location-container .map iframe {
     height: 28.5vw;
     margin-bottom: 18px;
   }
   .location-wave {
-    height: 200px;
+    height: 150px;
+    margin-bottom: -20px; 
   }
   .location-bg img {
-    width: 100%; 
+    width: 80%; 
 
   }
 }
@@ -1274,6 +1282,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .footer-bg img {
+    width: 70%;
+  }
+  
   .footer-container .logo {
     width: 52px;
     margin: 18px auto 14px;
