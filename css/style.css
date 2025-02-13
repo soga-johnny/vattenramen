@@ -412,7 +412,7 @@ nav .inner .menu-left {
   align-items: center;
   border-bottom: 2px solid #000;
   /* background: #fbf7f1; */
-  padding: 8px 60px 0 20px;
+  padding: 8px 30px 0 20px;
   box-sizing: border-box;
   /* height: 180px; */
 }
@@ -440,7 +440,7 @@ nav .inner .menu-left {
   align-items: center;
   border-bottom: 2px solid #000;
   /* background: #fbf7f1; */
-  padding: 8px;
+  padding: 4px;
   box-sizing: border-box;
   height: 68px;
 }
@@ -466,11 +466,11 @@ nav .inner .menu-left {
   width: 72px;
 }
 .menu-box img {
-  width: 76px;
-  height: 76px;
+  width: 72px;
+  height: 72px;
   position: absolute;
-  top: -12px;
-  right: 0;
+  bottom: 0;
+  right: 50px;
 }
 .menu-box-slim {
   position: relative;
@@ -497,8 +497,9 @@ nav .inner .menu-left {
     font-size: 32px;
     height: 150px;
   }
-  .menu-box {
-
+  .menu-box img {
+    bottom: 0;
+    right: -8px;
   }
 }
 /* ---menu--- */
