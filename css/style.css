@@ -1160,7 +1160,7 @@ nav .inner .menu-left {
   position: relative;
   height: 450px;
   margin-bottom: -120px; 
-  z-index: -1; 
+  /* z-index: ;  */
 } 
 .location-bg img {
   position: absolute;
