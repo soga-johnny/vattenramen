@@ -239,7 +239,7 @@ nav .inner .menu-left {
 .section-01-container h2 {
   font-size: 48px;
   color: #242625;
-  line-height: 61px;
+  line-height: 1;
   margin: 30px 0;
   text-align: center;
   font-weight: bold;
@@ -280,12 +280,14 @@ nav .inner .menu-left {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 10px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .section-01 .info p {
   font-size: 24px;
   margin-bottom: 30px;
   line-height: 1.8;
+  color: rgba(0, 0, 0, 1);
 }
 
 .section-01 .info p a {
@@ -306,6 +308,90 @@ nav .inner .menu-left {
   font-family: "Jost", serif;
   font-size: 24px;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-01:nth-child(2) {
+    margin-top: 127px;
+    margin-bottom: 10px;
+  }
+  .section-01-container {
+    width: 86.25%;
+    margin: 36px auto;
+  }
+
+  .section-01-container h2 {
+    font-weight: 450;
+    margin-bottom: 9px;
+  }
+
+  .section-01:nth-child(1) h2 {
+    margin-top: 44px;
+    margin-bottom: 11px;
+  }
+
+  .section-01-box {
+    gap: 24px;
+    margin-bottom: 9px;
+  }
+
+  .section-01-box .section-01-text {
+    width: calc(50% - 12px);
+    font-size: 16px;
+    line-height: 20.51px;
+    letter-spacing: 0.64px;
+  }
+
+  .section-01-box img {
+    width: calc(50% - 12px);
+  }
+
+  .section-01 .map {
+    margin: 18px 0;
+  }
+
+  .section-01 .map iframe {
+    height: 215px;
+  }
+
+  .section-01 .info {
+    padding: 0 6px;
+  }
+  .section-01:nth-child(2) .info {
+    padding: 0;
+  }
+  .section-01 .info h3 {
+    font-weight: 450;
+    font-size: 16px;
+    margin-bottom: 0;
+    letter-spacing: 0.64px;
+  }
+
+  .section-01 .info p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 21px;
+    line-height: 20.5px;
+    letter-spacing: 0.64px;
+    padding-left: 5px;
+    text-indent: -5px;
+  }
+  .section-01 .info p a {
+    padding-left: 4.5px;
+  }
+
+  .section-01 .info .btn {
+    min-width: 197px;
+    text-align: center;
+  }
+
+  .section-01 .info .btn a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 21px;
+    padding: 8px;
+  }
 }
 /* ---section-01--- */
 
