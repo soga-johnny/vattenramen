@@ -1320,3 +1320,18 @@ footer {
   }
 }
 /* ---footer--- */
+
+/* --- fade in ---*/
+.js-fadein {
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: all 1.2s;
+}
+.js-fadein.js-fadein-bottom {
+  transform: translate(0, 30px);
+}
+
+.js-fadein.js-scrollin {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
