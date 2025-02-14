@@ -444,7 +444,7 @@ nav .inner .menu-left {
   /* background: #fbf7f1; */
   padding: 4px;
   box-sizing: border-box;
-  height: 68px;
+  height: 52px;
 }
 .menu-box-wrap {
   width: 160px;
@@ -458,9 +458,9 @@ nav .inner .menu-left {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   transform: translateX(-50%); */
-  width: 200px:
+  /* width: 200px: */
   color: rgba(36, 38, 37, 1);
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
   font-family: "TAN-HEADLINE", sans-serif;
 }
@@ -476,15 +476,14 @@ nav .inner .menu-left {
 }
 .menu-box-slim {
   position: relative;
-    background-color: red;
-    /* padding-right: -40px; */
-    width: 72px;
+  background-color: red;
+  /* padding-right: -40px; */
+  width: 72px;
 }
 .menu-box-slim p {
-    position: absolute;
-    top: -20px;
-    left: -50px;
-
+  position: absolute;
+  top: -20px;
+  left: -50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1163,17 +1162,17 @@ nav .inner .menu-left {
 /* ---dessert-bg--- */
 
 /* ---location--- */
- .location-wave {
+.location-wave {
   position: relative;
   height: 450px;
-  margin-bottom: -70px; 
+  margin-bottom: -70px;
   /* z-index: ;  */
-} 
+}
 .location-bg img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 40%; 
+  width: 40%;
 }
 
 .location {
@@ -1220,11 +1219,10 @@ nav .inner .menu-left {
   }
   .location-wave {
     height: 150px;
-    margin-bottom: -20px; 
+    margin-bottom: -20px;
   }
   .location-bg img {
-    width: 80%; 
-
+    width: 80%;
   }
 }
 /* ---location--- */
@@ -1292,7 +1290,7 @@ footer {
   .footer-bg img {
     width: 70%;
   }
-  
+
   .footer-container .logo {
     width: 52px;
     margin: 18px auto 14px;
