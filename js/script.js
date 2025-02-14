@@ -45,29 +45,41 @@ function tileVideos() {
 
   const numCols = Math.ceil(containerWidth / videoWidth);
   const numRows = Math.ceil(containerHeight / videoHeight);
+  const numVideosNeeded = numCols * numRows;
+  const numCurrentVideos = videoContainer.children.length - 1; // 既存のビデオ数
 
-  // 既存のvideo要素をクリア（初回は不要）
-  while (videoContainer.children.length > 1) {
-    videoContainer.removeChild(videoContainer.lastChild);
-  }
-
-  // 必要な数だけvideo要素を複製して追加
-  for (let i = 0; i < numRows; i++) {
-    for (let j = 0; j < numCols; j++) {
-      const clonedVideo = videoTile.cloneNode(true); // deep clone
-      clonedVideo.play().catch((e) => {
-        //自動再生をミュートで再試行
-        console.warn("Autoplay failed:", e);
-        clonedVideo.muted = true;
-        clonedVideo.play();
-      });
-      videoContainer.appendChild(clonedVideo);
+  if (numVideosNeeded > numCurrentVideos) {
+    // 必要な数だけvideo要素を複製して追加
+    for (let i = 0; i < numRows; i++) {
+      for (let j = 0; j < numCols; j++) {
+        if (videoContainer.children.length - 1 < numVideosNeeded) {
+          const clonedVideo = videoTile.cloneNode(true); // deep clone
+          clonedVideo.play().catch((e) => {
+            //自動再生をミュートで再試行
+            console.warn("Autoplay failed:", e);
+            clonedVideo.muted = true;
+            clonedVideo.play();
+          });
+          videoContainer.appendChild(clonedVideo);
+        }
+      }
+    }
+  } else if (numVideosNeeded < numCurrentVideos) {
+    // 不要なvideo要素を削除
+    while (videoContainer.children.length - 1 > numVideosNeeded) {
+      videoContainer.removeChild(videoContainer.lastChild);
     }
   }
 }
 
 // 初回実行
-tileVideos();
+ tileVideos();
 
 // ウィンドウリサイズ時に再計算 (必要に応じて)
-// window.addEventListener("resize", tileVideos);
+// let resizeTimer;
+// window.addEventListener("resize", () => {
+//   clearTimeout(resizeTimer);
+//   resizeTimer = setTimeout(() => {
+//     requestAnimationFrame(tileVideos);
+//   }, 250); // 250ms の遅延 (調整可能)
+// });
