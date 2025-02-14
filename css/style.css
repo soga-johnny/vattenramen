@@ -857,6 +857,7 @@ nav .inner .menu-left {
   padding: 50px;
   font-size: 24px;
   line-height: 1.22;
+  font-weight: 450;
   background: url(../img/bg01.jpg);
   background-size: 383px;
   border: 5px solid #242625;
@@ -868,7 +869,7 @@ nav .inner .menu-left {
     padding: 0 min(30px, 7vw);
   }
   .box {
-    padding: 25px 30px 30px;
+    padding: 39px 30px 30px;
   }
   .box .ttl {
     font-size: 24px;
@@ -927,8 +928,9 @@ nav .inner .menu-left {
   }
 
   .item-text {
-    padding: 25px 15px;
-    font-size: 18px;
+    padding: 25px 30px;
+    padding-right: 20px;
+    font-size: 13px;
     min-height: 154px;
   }
   .ramen .item.logo-bottom .item-text {
