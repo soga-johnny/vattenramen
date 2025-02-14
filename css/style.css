@@ -506,7 +506,7 @@ nav .inner .menu-left {
 /* ---menu--- */
 
 .section {
-  margin: 100px 0;
+  margin: 80px 0;
 }
 .logo-bottom {
   margin-bottom: 50px;
@@ -723,6 +723,9 @@ nav .inner .menu-left {
 }
 
 /* APPETIZERS */
+.appetizer {
+  margin-top: 43px;
+}
 .appetizer .box h4 {
   font-family: "TAN-HEADLINE", sans-serif;
   font-size: 24px;
