@@ -138,7 +138,7 @@ nav {
   bottom: 0;
   width: 100%;
   background: url(../img/bg01.jpg);
-  background-size: contain;
+  background-size: 383px;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -223,16 +223,16 @@ nav .inner .menu-left {
   background-color: #333;
 }
 .open .toggle_btn span:nth-child(1) {
-  -webkit-transform: translateY(10px) rotate(-315deg);
-  transform: translateY(10px) rotate(-315deg);
+  -webkit-transform: translateY(8.2px) rotate(-315deg);
+  transform: translateY(8.2px) rotate(-315deg);
   width: 100%;
 }
 .open .toggle_btn span:nth-child(2) {
   opacity: 0;
 }
 .open .toggle_btn span:nth-child(3) {
-  -webkit-transform: translateY(-10px) rotate(315deg);
-  transform: translateY(-10px) rotate(315deg);
+  -webkit-transform: translateY(-8.2px) rotate(315deg);
+  transform: translateY(-8.2px) rotate(315deg);
 }
 /*============
 #mask
@@ -249,6 +249,7 @@ nav .inner .menu-left {
   width: 100%;
   height: 100%;
   background: url(../img/bg01.jpg);
+  background-size: 383px;
   opacity: 0.8;
   z-index: 2;
   cursor: pointer;
@@ -302,7 +303,7 @@ nav .inner .menu-left {
 }
 .top-container {
   background: url(../img/bg01.jpg);
-  background-size: contain;
+  background-size: 383px;
 }
 .top-inner {
   width: 90%;
@@ -364,6 +365,7 @@ nav .inner .menu-left {
   border: 5px solid #000;
   text-align: center;
   background: url(../img/bg01.jpg);
+  background-size: 383px;
   padding-top: 40px;
 }
 .menu-container .ttl {
@@ -528,6 +530,7 @@ nav .inner .menu-left {
   border: 5px solid #242625;
   text-align: center;
   background: url(../img/bg01.jpg);
+  background-size: 383px;
 }
 .ramen-box h4 {
   font-weight: normal;
@@ -770,6 +773,7 @@ nav .inner .menu-left {
   text-align: center;
   padding: 50px;
   background: url(../img/bg01.jpg);
+  background-size: 383px;
 }
 .box .ttl {
   position: absolute;
@@ -855,6 +859,7 @@ nav .inner .menu-left {
   font-size: 24px;
   line-height: 1.22;
   background: url(../img/bg01.jpg);
+  background-size: 383px;
   border: 5px solid #242625;
   border-top: none;
 }
@@ -955,6 +960,7 @@ nav .inner .menu-left {
 }
 .drink-item {
   background: url(../img/bg01.jpg);
+  background-size: 383px;
   padding: 50px 0;
   border-right: 5px solid #242625;
   border-left: 5px solid #242625;
@@ -1172,7 +1178,7 @@ nav .inner .menu-left {
 
 .location {
   background: url(../img/bg01.jpg);
-  background-size: contain;
+  background-size: 383px;
   padding-top: 20px;
   padding-left: 6.5%;
   padding-right: 6.5%;
@@ -1229,7 +1235,7 @@ nav .inner .menu-left {
 footer {
   position: relative;
   background: url(../img/bg01.jpg);
-  background-size: contain;
+  background-size: 383px;
   padding-top: min(32.3vw, 193.8px);
 }
 .footer-bg {
